@@ -1,7 +1,7 @@
 /*
  * MIT License
  * 
- * Copyright (c) 2020 Hochschule Esslingen
+ * Copyright (c) ${date?date?string("yyyy")} Hochschule Esslingen
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,20 +21,3 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE. 
  */
-package de.hsesslingen.keim.efs.demo.consumer;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-/**
- *
- * @author ben
- */
-@SpringBootApplication
-public class DemoConsumerApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(DemoConsumerApplication.class, args);
-    }
-
-}
