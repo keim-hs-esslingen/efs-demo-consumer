@@ -1,0 +1,21 @@
+# Define a name for your service
+service-name: demo-consumer
+
+# Put the base-url of your service-directory here.
+service-directory-base-url: http://localhost:9900/
+
+spring:
+  application:
+    name: ${service-name}
+
+server:
+  port: 9910 # Configure aport for your service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${service-directory-base-url}/eureka/
+  instance:
+    appname: ${service-name}
+
+efs.middleware.consumer-api.enabled: true
