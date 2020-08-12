@@ -9,7 +9,7 @@ spring:
     name: ${service-name}
 
 server:
-  port: 9910 # Configure aport for your service
+  port: 9910 # Configure a port for your service
 
 eureka:
   client:
