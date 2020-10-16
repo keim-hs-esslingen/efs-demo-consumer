@@ -1,21 +1,11 @@
-# Define a name for your service
-service-name: demo-consumer
-
-# Put the base-url of your service-directory here.
-service-directory-base-url: http://localhost:9900/
 
 spring:
   application:
-    name: ${service-name}
+    name: demo-consumer
 
-server:
-  port: 9910 # Configure a port for your service
+ # Configure a port for your service
+server.port: 9910
 
-eureka:
-  client:
-    service-url:
-      defaultZone: ${service-directory-base-url}/eureka/
-  instance:
-    appname: ${service-name}
-
-efs.middleware.consumer-api.enabled: true
+middleware:
+  service-directory-base-url: https://mobility-middleware.de/test/service-directory/api
+  consumer.api.enabled: true
